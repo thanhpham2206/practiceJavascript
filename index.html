@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Practice</title>
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/dropdownlist.css">
+        <link rel="stylesheet" href="css/slider.css">
+    </head>
+    <body>
+        <div class="slider">
+            <div class="slider-list">
+                <div id="one" class="slider-item pink active">
+                    One
+                </div>
+                <div id="two" class="slider-item green">
+                    <b>Two</b>
+                </div>
+                <div id="three" class="slider-item blue">
+                    <i>Three</i>
+                </div>
+            </div>
+            <div class="slider-point-container">
+                <a class="slider-point fa active" data-target="#one"></a>
+                <a class="slider-point fa" data-target="#two"></a>
+                <a class="slider-point fa" data-target="#three"></a>
+            </div>
+
+            <a id="btnPrev" class="btnNavigation previous"><i class="fa fa-caret-left"></i></a>
+            <a id="btnNext" class="btnNavigation next"><i class="fa fa-caret-right"></i></a>
+        </div>
+        <div>
+            <a id="ddlButton" class="button">New</a>
+            <ul id="ddl" class="dropdownlist">
+                <li>
+                    <a href="#"><img src="images/folder.png" alt="folder">&nbsp Folder</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><img src="images/file_upload.png" alt="folder">&nbsp File upload</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/folder_upload.png" alt="folder">&nbsp Folder upload</a>
+                </li>
+                <li  class="divider"></li>
+                <li>
+                    <a href="#"><img src="images/docs.png" alt="folder">&nbsp Google Docs</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/sheets.png" alt="folder">&nbsp Google Sheets</a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slides.png" alt="folder">&nbsp Google Slides</a>
+                </li>
+                <li>
+                    <a href="#">More<span class="displayCarlet"><i class="fa fa-angle-right"></span></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/dropdownlist.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+    </body>
+</html>
