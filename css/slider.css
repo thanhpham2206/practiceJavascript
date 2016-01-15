@@ -56,25 +56,71 @@
     content: "\f10c";
 }
 
-.btnNavigation{
+.previous {
+    border: none;
+    background: transparent;
+    color: #FFF;
+    font-size: 22px;
     position: absolute;
-    top: 126px;
-    display: none;
-    width: 0;
-    height: 0;
-    font-size: 3em;
-    color:#fff;
-}
-
-.slider:hover .btnNavigation{
+    top: 130px;
+    left: 0;
+    width: 250px;
+    height: 150px;
+    overflow:hidden;
     display: inline-block;
-    transition: all 500ms ease;
 }
 
-.btnNavigation.previous{
-    left: 15px;
+.previous:before {
+    font-family: FontAwesome;
+    content:"\f053";
+    position: absolute;
+    top: 11px;
+    left: -30px;
+    transition: all 600ms ease;
+    background-color: transparent;
 }
 
-.btnNavigation.next{
-    right: 32px;
+.previous:hover:before {
+    left: 10px;
+
+}
+
+.previous:hover {
+    border: transparent;
+    background-color: transparent;
+    background-image: linear-gradient(transparent, transparent);
+}
+
+.next {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 250px;
+    height: 150px;
+    overflow:hidden;
+    display: inline-block;
+}
+
+.next:before {
+    font-family: FontAwesome;
+    content:"\f054";
+    position: absolute;
+    top: 11px;
+    right: -30px;
+    transition: all 600ms ease;
+    background-color: transparent;
+}
+
+.next:hover:before {
+    right: 10px;
+}
+
+.next:hover {
+    border: transparent;
+    background-color: transparent;
+    background-image: linear-gradient(transparent, transparent);
 }
