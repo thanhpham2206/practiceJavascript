@@ -11,56 +11,36 @@
     <body>
         <div class="slider">
             <div class="slider-list">
-                <div id="one" class="slider-item pink active">
-                    One
-                </div>
-                <div id="two" class="slider-item green">
-                    <b>Two</b>
-                </div>
-                <div id="three" class="slider-item blue">
-                    <i>Three</i>
-                </div>
+                <div class="slider-item pink active">One</div>
+                <div class="slider-item green"><b>Two</b></div>
+                <div class="slider-item blue"><i>Three</i></div>
             </div>
             <div class="slider-point-container">
-                <a class="slider-point fa active" data-target="#one"></a>
-                <a class="slider-point fa" data-target="#two"></a>
-                <a class="slider-point fa" data-target="#three"></a>
+                <a class="slider-point fa active"></a>
+                <a class="slider-point fa"></a>
+                <a class="slider-point fa"></a>
             </div>
 
-            <a id="btnPrev" class="btnNavigation previous"><i class="fa fa-caret-left"></i></a>
-            <a id="btnNext" class="btnNavigation next"><i class="fa fa-caret-right"></i></a>
+            <a class="btnNavigation previous"><i class="fa fa-caret-left"></i></a>
+            <a class="btnNavigation next"><i class="fa fa-caret-right"></i></a>
         </div>
+
         <div>
-            <a id="ddlButton" class="button">New</a>
+            <a onclick="myFunction()" class="button"><span class="button-inner">New</span></a>
+            <a id="demo" class=" change-button"></a>
             <ul id="ddl" class="dropdownlist">
-                <li>
-                    <a href="#"><img src="images/folder.png" alt="folder">&nbsp Folder</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="#"><img src="images/file_upload.png" alt="folder">&nbsp File upload</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/folder_upload.png" alt="folder">&nbsp Folder upload</a>
-                </li>
-                <li  class="divider"></li>
-                <li>
-                    <a href="#"><img src="images/docs.png" alt="folder">&nbsp Google Docs</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/sheets.png" alt="folder">&nbsp Google Sheets</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/slides.png" alt="folder">&nbsp Google Slides</a>
-                </li>
-                <li>
-                    <a href="#">More<span class="displayCarlet"><i class="fa fa-angle-right"></span></i>
-                    </a>
+                <li class="itemddl change"><img src="" width="25px" height="25px"><a>Item1</a></li>
+                <li class="itemddl change"><img src="" width="25px" height="25px"><a>Item2</a></li>
+                <li><hr /></li>
+                <li class="itemddl change"><img src="" width="25px" height="25px"><a>Item3</a></li>
+                <li class="itemddl change"><img src="" width="25px" height="25px"><a>Item4</a></li>
+                <li class="more-itemddl changemore">
+                    <a>More</a>
+                    <span class="displayIcon"><i class="fa fa-angle-right"></i></span>
                 </li>
             </ul>
         </div>
 
-        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/dropdownlist.js"></script>
         <script type="text/javascript" src="js/slider.js"></script>
     </body>

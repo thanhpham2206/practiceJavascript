@@ -66,8 +66,9 @@
     color:#fff;
 }
 
-.slider:hover .btnNavigation.display{
+.slider:hover .btnNavigation{
     display: inline-block;
+    transition: all 500ms ease;
 }
 
 .btnNavigation.previous{
